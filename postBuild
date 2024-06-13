@@ -6,6 +6,6 @@ curl -fsSL https://deno.land/install.sh | sh
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-# Install Deno Jupyter kernel
-deno install -A --unstable https://deno.land/x/deno_jupyter_kernel@v0.4.0/install.ts
+# Install Deno Jupyter kernel (make sure to use the correct version and URL)
+deno install -qAf --unstable https://deno.land/x/deno_jupyter_kernel@latest/install.ts
 deno_jupyter_kernel install
